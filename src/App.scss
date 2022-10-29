@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.binance-img {
+  width: 100%;
+  height: auto;
+}
+body {
+  // font-family: NeueHaasDisplayRoman;
+  background-color: #0b132b;
+  color: #fff;
+}
+// --------------------------------------------- Header-------------------------
+.navbar {
+  background-color: transparent;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: #fff;
+  a {
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: white;
+    font-weight: 700;
+  }
+  .logo {
+    height: 28px;
+    width: 150px;
+  }
+  a:active {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+  }
+  a:hover {
+    color: blue;
+  }
+  .logo-img {
+    height: 30px;
+    width: 190px;
+  }
+}
+// -------------------------------------------------Footer-----------------------
+
+.footer {
+  background-color: transparent;
+  color: white;
+  .icons {
+    padding-left: 100px;
+  }
+  .footer-line {
+    border: 1px solid white;
+    font-weight: bold;
+    color: white;
+  }
+  .footer-img {
+    width: 150px;
+    height: 28px;
+  }
+  .blue-color {
+    color: #6d8bb0;
+    padding-left: 10px;
+  }
+}
+//-----------------------------------------------Hero------------------------
+.hero {
+  background-image: url("https://octafarm.fi/_next/static/image/src/assets/images/big-oct-back.348882dba9fe99cbd191ef5c688ed7e2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 110px;
+  .hero-btn {
+    background-color: #6fffe9c7;
+    color: #0b132b;
+    font-weight: 600;
+    border: 1px solid #3a506b;
+    padding: 6px 30px;
+    width: 70%;
+    border-radius: 4px;
+  }
+  .hero-btn:hover{
+    background-color:#6fffe9;
+  }
+  .hero-second-btn {
+    color: white;
+    border: 1px solid #6fffe9c7;
+    padding: 8px 35px;
+  }
+  .hero-second-btn:hover{
+      background-color: #3a506b;;
+  }
+  .hero-h3 {
+    color: #6fffe9c7;
+  }
+  .hero-below-img {
+    width: 180px;
+    height: 44px;
+    display: block;
+    margin: auto;
+  }
+  .hero-below-two {
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin: auto;
+  }
+  @media only screen and (max-width: 600px) {
+    .hero-btn {
+      width: 100%;
+    }
+    .hero-second-btn {
+      width: 90%;
+      display: block;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+    .hero-h1 {
+      font-size: 32px;
+    }
+  }
+}
+//////---------------------------------------------Intro----------------------------
+.intro {
+  background: radial-gradient(
+    17.4% 50% at 41.26% 50%,
+    #0d3f59 0,
+    rgba(4, 24, 54, 0) 100%
+  );
+  padding-top: 90px;
+  .card-box {
+    background: rgba(46, 125, 175, 0.2);
+    padding: 26px;
+    border-radius: 8px;
+    border-top: 2px solid #6fffe9;
+    border-left: 1px solid #6fffe9;
+    border-right: 1px solid #6fffe9;
+  }
+  .offer {
+    font-size: 60px;
+    font-family: Montserrat, sans-serif;
+  }
+  .intro-box-below {
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    color: #5bc0be;
+  }
+  .intro-h3 {
+    color: #6fffe9;
+    font-family: Montserrat, Sans-serif;
+    font-size: 21px;
+  }
+  @media only screen and (max-width: 600px) {
+    .card-box {
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+  }
+}
+//------------------------------------------------Cross chain--------------------
+.crosschain {
+  padding-top: 90px;
+  padding-bottom: 20px;
+  .cross-h3 {
+    color: #6fffe9;
+    font-family: Montserrat, Sans-serif;
+    font-size: 21px;
+  }
+  .cross-h1 {
+    font-family: Montserrat, Sans-serif;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 66px;
+  }
+}
+///----------------------------------------------Sale ----------------------
+.sale {
+  margin-top: 80px;
+  .sale-card {
+    background: rgba(46, 125, 175, 0.2);
+    padding: 26px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .sale-card-two {
+    background: rgba(46, 125, 175, 0.2);
+    padding: 26px;
+    border-radius: 8px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .sale-card-three {
+    background: rgba(46, 125, 175, 0.2);
+    padding: 26px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .sale-card-top {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    color: #99fff0;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  .card-center {
+    margin-top: -25px;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    font-family: Montserrat, sans-serif;
+    display: block;
+  }
+  .coming {
+    background: #b71c1c;
+    color: #fff;
+    position: absolute;
+    display: block;
+    font-size: 10px;
+    padding: 3px 8px;
+    transform: rotate(-40deg);
+    top: 13px;
+    left: -5px;
+  }
+  .upcoming {
+    background: #6fffe9c7;
+    color: black;
+    position: absolute;
+    display: block;
+    font-size: 10px;
+    padding: 3px 8px;
+    transform: rotate(-40deg);
+    top: 13px;
+    left: -5px;
+  }
+  .card-center-two {
+    margin-top: -18px;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    font-family: Montserrat, sans-serif;
+    display: block;
+  }
+  .sale-btn {
+    background-color: #6fffe9c7;
+    width: 100%;
+    font-weight: 500;
+    color: black;
+  }
+  .upto {
+    font-size: 13px;
+    color: #5bc0be;
+    display: block;
+    font-weight: 700;
+  }
+//   @media only screen and (max-width: 600px){
+	
+// }
+}
+/////////--------------------------------------Tokenomics------------------------
+.tokenomics {
+  padding-top: 80px;
+  .tokenomics-h {
+    color: #5bc0be;
+    display: block;
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .tokenomics-img {
+    width: 100%;
+    height: auto;
+  }
+}
+//--------------------------------------------token------------------------
+.token {
+  padding-bottom: 100px;
+  .token-card-img {
+    height: 46px;
+    width: 50px;
+  }
+  .card {
+    background: rgba(46, 125, 175, 0.2);
+    padding: 26px;
+    border-radius: 8px;
+  }
+  .token-h {
+    color: #99fff0;
+    font-weight: 600;
+  }
+  .token-h-top {
+    color: #99fff0;
+    font-weight: 500;
+  }
+}
+/////----------------------------------------Faqs-------------------------
+.faqs {
+  padding-bottom: 100px;
+  .styles_faq-row-wrapper__3vA1D .styles_faq-row__2YF3c {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(46, 125, 175, 0.2);
+    margin-bottom: 10px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+  }
+}
