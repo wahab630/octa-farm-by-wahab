@@ -4,6 +4,14 @@ const Hero = () => {
   return (
     <>
       <div className="hero">
+        <div className="container-fluid">
+        <div className="bg-img">
+          <img src="https://octafarm.fi/_next/static/image/src/assets/images/big-oct-front.96ec7b1d19a8fc1425814cd39436228d.png"
+           alt="no"
+           className="hero-img" />
+         
+        </div>
+       
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
@@ -77,6 +85,9 @@ const Hero = () => {
               </div>
             </div>
           </div>
+          <div className="row mt-5">
+            <hr />
+          </div>
           <div className="row media mt-4">
             <div className="col-lg-4">
               <div>
@@ -106,6 +117,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </>

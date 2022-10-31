@@ -58,9 +58,9 @@ const config = {
 const Faqs = () => {
   return (
     <>
-    <div className="faqs">
+    <div className="faqs" id='faqs'>
       <div className="container">
-        <h1>FAQs </h1>
+        <h1>FAQs<sub className='faq-sub'>- frequently asked questions</sub> </h1>
         <div className="row pt-2">
           <div className="col">
           <Faq data={data} styles={styles} config={config} />

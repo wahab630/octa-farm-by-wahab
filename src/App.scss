@@ -3,10 +3,25 @@
   padding: 0;
   box-sizing: border-box;
 }
-.binance-img {
-  width: 100%;
-  height: auto;
+// .binance-img {
+//   width: 100%;
+//   height: auto;
+// }
+.piechart-left {
+  rect {
+    fill: transparent;
+  }
+  circle {
+    fill: #99fff0;
+  }
+  text {
+    fill: white;
+  }
+  path {
+    fill: #5bc0be;
+  }
 }
+
 body {
   // font-family: NeueHaasDisplayRoman;
   background-color: #0b132b;
@@ -33,7 +48,7 @@ body {
     border-bottom: 2px solid black;
   }
   a:hover {
-    color: blue;
+    color: #3a506b;
   }
   .logo-img {
     height: 30px;
@@ -64,11 +79,22 @@ body {
 }
 //-----------------------------------------------Hero------------------------
 .hero {
-  background-image: url("https://octafarm.fi/_next/static/image/src/assets/images/big-oct-back.348882dba9fe99cbd191ef5c688ed7e2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  .bg-img {
+    position: absolute;
+    top: -170px;
+    left: 500px;
+  }
+  .hero-img {
+    width: 100%;
+    height: auto;
+  }
   padding-top: 110px;
+  z-index: 4;
+  .container-fluid {
+  }
+  .container {
+    position: relative;
+  }
   .hero-btn {
     background-color: #6fffe9c7;
     color: #0b132b;
@@ -78,16 +104,40 @@ body {
     width: 70%;
     border-radius: 4px;
   }
-  .hero-btn:hover{
-    background-color:#6fffe9;
+  //   .bg-img{
+  //     position: absolute;
+  //     top: -14em;
+  //     right: -18em;
+  //     z-index: 2;
+  //     overflow: hidden;
+  //     width: 69em;
+  //     opacity: .8;
+  //   }
+  //   .bg_img_front {
+
+  //     animation: oct-back 8s cubic-bezier(.66,0,0,1) 0s infinite alternate;
+  // }
+  // .bg_img_middle {
+  //   position: absolute;
+  //   top: -0.5em;
+  //   left: 0;
+  // }
+  // .bg_img_back {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   animation: oct-back 4s cubic-bezier(.66,0,0,1) 0s infinite alternate;
+  // }
+  .hero-btn:hover {
+    background-color: #6fffe9;
   }
   .hero-second-btn {
     color: white;
     border: 1px solid #6fffe9c7;
     padding: 8px 35px;
   }
-  .hero-second-btn:hover{
-      background-color: #3a506b;;
+  .hero-second-btn:hover {
+    background-color: #3a506b;
   }
   .hero-h3 {
     color: #6fffe9c7;
@@ -126,7 +176,7 @@ body {
     #0d3f59 0,
     rgba(4, 24, 54, 0) 100%
   );
-  padding-top: 90px;
+  padding-top: 120px;
   .card-box {
     background: rgba(46, 125, 175, 0.2);
     padding: 26px;
@@ -152,8 +202,8 @@ body {
   }
   @media only screen and (max-width: 600px) {
     .card-box {
-        margin-bottom: 20px;
-        margin-top: 10px;
+      margin-bottom: 20px;
+      margin-top: 10px;
     }
   }
 }
@@ -180,24 +230,33 @@ body {
     background: rgba(46, 125, 175, 0.2);
     padding: 26px;
     border-radius: 8px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+
     position: relative;
   }
+  // .first{
+  //   padding-top: 20px;
+  //   padding-bottom: 20px;
+  // }
+  // .third{
+  //   padding-top: 50px;
+  //   padding-bottom: 20px;
+  // }
+  // .second{
+  //   padding-top: 20px;
+  //   padding-bottom: 20px;
+  // }
   .sale-card-two {
     background: rgba(46, 125, 175, 0.2);
     padding: 26px;
     border-radius: 8px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
     position: relative;
   }
   .sale-card-three {
     background: rgba(46, 125, 175, 0.2);
     padding: 26px;
     border-radius: 8px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+
     position: relative;
   }
   .sale-card-top {
@@ -257,10 +316,11 @@ body {
     color: #5bc0be;
     display: block;
     font-weight: 700;
+    margin-top: 20px;
   }
-//   @media only screen and (max-width: 600px){
-	
-// }
+  //   @media only screen and (max-width: 600px){
+
+  // }
 }
 /////////--------------------------------------Tokenomics------------------------
 .tokenomics {
@@ -289,12 +349,14 @@ body {
     border-radius: 8px;
   }
   .token-h {
-    color: #99fff0;
-    font-weight: 600;
+    font-family: Montserrat, Sans-serif;
+    color: #d6fff9;
+    font-size: 18px;
   }
   .token-h-top {
-    color: #99fff0;
+    color: #d6fff9;
     font-weight: 500;
+    font-size: 1.25rem;
   }
 }
 /////----------------------------------------Faqs-------------------------
@@ -308,5 +370,135 @@ body {
     padding: 10px 16px;
     border: none;
     border-radius: 10px;
+  }
+  .faq-sub {
+    font-size: 14px;
+    font-style: italic;
+    color: rgba(46, 126, 175, 0.857);
+  }
+}
+//------------------------------------------Binance----------------------------
+.binance {
+  .binance-img {
+    height: 50px;
+    width: 50px;
+  }
+  .bd-highlight {
+    margin-bottom: 70px;
+    margin-top: -10px;
+  }
+  .step-5 {
+    margin-top: 72px;
+  }
+  .first-gif {
+    margin-left: -90px;
+  }
+  .second-gif {
+    margin-top: 60px;
+    margin-left: -60px;
+  }
+  .third-gif {
+    margin-top: 60px;
+    margin-left: -40px;
+  }
+  .octo {
+    display: flex;
+    align-items: center;
+  }
+  .octa-body {
+    margin-top: -180px;
+    margin-left: 30px;
+  }
+  .list-group {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    border-radius: 0.25rem;
+  }
+  .list-group-item {
+    margin-bottom: 25px;
+    background: #1c2541;
+    color: #fff;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+    border-left: 2px solid #6fffe9;
+  }
+  .step-4 {
+    margin-top: 33px;
+    margin-left: 30px;
+  }
+  .img-fluid {
+    width: 240px;
+  }
+  .network {
+    margin-top: -110px;
+    // margin-right: 40px;
+    font-weight: 700;
+    font-family: NeueHaasDisplayMedium;
+  }
+}
+//------------------------------------------Roadmap------------------------
+.roadmap {
+  margin-bottom: 300px;
+  .first {
+    display: flex;
+    margin-top: 300px;
+  }
+  .second{
+    display: flex;
+    margin-top: 300px;
+  }
+  .roadmap-1st {
+    border-left: 2px dashed #3a506b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .roadmap-1st li {
+    margin-left: 20px;
+    width: 200px;
+    color: #5bc0be;
+  }
+  .roadmap-2nd{
+    border-left: 2px dashed #3a506b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .roadmap-2nd li {
+    margin-left: 20px;
+    width: 200px;
+    color: #6fffe9;
+  }
+  .line {
+    height: 5px;
+    width: 250px;
+    background-color: #3a506b;
+  }
+  .node {
+    border-radius: 50%;
+    margin-top: -11px;
+    height: 30px;
+    width: 30px;
+    background-color: #3a506b;
+    position: relative;
+    
+  }
+  .text {
+    position: absolute;
+    top: -165px;
+    left: 15px;
+    // border: 2px solid wheat;
+  }
+  .text-two{
+    position: absolute;
+    top: 25px;
+    left: 16px;
+    // border: 2px solid wheat;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .roadmap{
+    display: none;
   }
 }

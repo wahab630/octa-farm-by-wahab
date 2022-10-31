@@ -42,7 +42,7 @@ const Token = () => {
         <div className="container">
           <div class="row mb-3">
             <div class="col-lg-12">
-              <h1>Token Value-Accrual &amp; Utility</h1>
+              <h1 className="fw-bold">Token Value-Accrual &amp; Utility</h1>
               <h5 className="token-h-top">
                 OCTF is predicated on a fixed-supply model that is integrated
                 with a continual buyback-and-burn mechanism for maximum
@@ -61,10 +61,10 @@ const Token = () => {
                         <img
                           src={v.img}
                           className="token-card-img mb-3"
-                          alt=""
+                          alt="no"
                         />
                         <h3>{v.heading}</h3>
-                        <h5 className="token-h">{v.headingTwo}</h5>
+                        <h4 className="token-h">{v.headingTwo}</h4>
                       </div>
                     </div>
                   </div>

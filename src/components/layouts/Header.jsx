@@ -25,9 +25,9 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link to="/" className="nav-link  ms-5">
+                <a href="#overview" className="nav-link  ms-5">
                   Overview
-                </Link>
+                </a>
               </li>
               <li className="nav-item">
                 <Link to="" className="nav-link ms-5">
@@ -35,9 +35,9 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="" className="nav-link  ms-5">
+                <a href="#tokenomics" className="nav-link  ms-5">
                 Tokenomics
-                </Link>
+                </a>
               </li>
               <li className="nav-item">
                 <Link to="" className="nav-link  ms-5">
@@ -45,9 +45,9 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="" className="nav-link  ms-5">
+                <a href="#faqs" className="nav-link  ms-5">
                   FAQs
-                </Link>
+                </a>
               </li>
              
             </ul>
